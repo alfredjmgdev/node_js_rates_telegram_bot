@@ -16,9 +16,9 @@ else {
 
 function telegramMessage(){
   
-    bot.sendMessage("829387252", 'Hello, ' + '!').then(() => {
-        // reply sent!
-    });
+    // bot.sendMessage("829387252", 'Hello, ' + '!').then(() => {
+    // });
+    console.log("wait")
 
 }
 
