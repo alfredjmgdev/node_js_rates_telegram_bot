@@ -20,4 +20,4 @@ module.exports = (bot) => {
     bot.processUpdate(req.body);
     res.sendStatus(200);
   });
-};
+}; 
