@@ -11,13 +11,12 @@ else {
   bot = new Bot(token, { polling: true });
 }
 
-console.log('Bot server started in the ' + process.env.NODE_ENV + ' mode');
-
-bot.on('message', (msg) => {
-  const name = msg.from.first_name;
-  bot.sendMessage(msg.chat.id, 'Hello, ' + name + '!').then(() => {
+function telegramMessage(){
+  bot.sendMessage("829387252", 'Hello, ' + '!').then(() => {
     // reply sent!
   });
-});
+}
+
+setInterval(telegramMessage, 10000);
 
 module.exports = bot;
