@@ -17,7 +17,6 @@ else {
 // ------------------- scraping ----------------------
 
 // Global variables
-telegram = new TelegramBot(telegram_key, { polling: true });
 var sended = false;
 // Airtm
 var airtm_url = "https://rates.airtm.com/";
@@ -156,7 +155,7 @@ function telegramBotMessage(data) {
     if(date.getMinutes() === 0) {
         if(sended === false) {
             sended = true;
-            telegram.sendMessage("829387252",
+            bot.sendMessage("829387252",
             "<b>Airtm Rates:</b>"+
             "\nSell: "+data.airtm.airtm_sell_rate+
             "\nBuy: "+data.airtm.airtm_buy_rate+
