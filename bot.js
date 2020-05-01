@@ -196,4 +196,4 @@ async function main() {
 
 setInterval(main, 60000);
 
-module.exports = bot;
+module.exports = bot; 
