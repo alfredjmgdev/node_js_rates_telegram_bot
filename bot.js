@@ -155,7 +155,7 @@ function telegramBotMessage(data) {
     if(date.getMinutes() === 0) {
         if(sended === false) {
             sended = true;
-            bot.sendMessage("829387252",
+            bot.sendMessage(process.env.ALFRED_ID,
             "<b>Airtm Rates:</b>"+
             "\nSell: "+data.airtm.airtm_sell_rate+
             "\nBuy: "+data.airtm.airtm_buy_rate+
