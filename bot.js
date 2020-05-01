@@ -16,7 +16,9 @@ else {
 
 function telegramMessage(){
   
-console.log("Hey dude")
+    bot.sendMessage("829387252", 'Hello, ' + '!').then(() => {
+        // reply sent!
+    });
 
 }
 
