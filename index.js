@@ -5,7 +5,7 @@ const $ = require('cheerio');
 var TelegramBot = require('node-telegram-bot-api');
 
 // Global variables
-telegram = new TelegramBot("1221897894:AAF9_c7MKCsAyFjCay7yMpbFh4f6ge24QhM", { polling: true });
+telegram = new TelegramBot(telegram_key, { polling: true });
 var sended = false;
 // Airtm
 var airtm_url = "https://rates.airtm.com/";
@@ -142,7 +142,7 @@ function telegramBotMessage(data) {
         if(date.getMinutes() === 0) {
             if(sended === false) {
                 sended = true;
-                telegram.sendMessage("829387252",
+                telegram.sendMessage(telegram_id,
                 "<b>Airtm Rates:</b>"+
                 "\nSell: "+data.airtm.airtm_sell_rate+
                 "\nBuy: "+data.airtm.airtm_buy_rate+
