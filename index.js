@@ -10,11 +10,8 @@ const options = {
 }
 
 // Definimos funciones para luego usarlas al recibir una petición en el router
-function getHTML(req, res) {
-  res.sendFile('./index.html', options, (err) => {
-    if (err) throw err;
-    console.log('Sirviendo index.html')
-  })
+function getHTML() {
+  console.log("hola");
 }
 
 // Definimos las rutas
