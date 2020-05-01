@@ -1,5 +1,8 @@
 const token = process.env.TOKEN;
 
+var request = require("request");
+var rp = require("request-promise");
+const $ = require('cheerio');
 const Bot = require('node-telegram-bot-api');
 let bot;
 
@@ -12,9 +15,9 @@ else {
 }
 
 function telegramMessage(){
-  bot.sendMessage("829387252", 'Hello, ' + '!').then(() => {
-    // reply sent!
-  });
+  
+console.log("Hey dude")
+
 }
 
 setInterval(telegramMessage, 10000);
